@@ -18,7 +18,7 @@ for leaver in leave:
     # 떠나야 하는 사람이 방안에 없다면 그 사람이 들어올때 까지 사람을 넣음
     leaver_index = enter.index(leaver)
     for i in range(entered_point, leaver_index + 1):
-        # 들어온 사람은 방안에 있는 사람 수 만큼 정답카운트증가
+        # 들어온 사람은 방안에 있는 사람 수 만큼 정답 카운트증가
         answer[enter[i]] += len(room)
         # 사람이 들어오면 방안에 있는 사람들은 1만큼 카운트증가
         for r in room:
